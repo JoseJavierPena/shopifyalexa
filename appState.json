@@ -1,0 +1,122 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "7f687505-63dc-4cb9-af01-bd24887e9cdb": {
+        "id": "7f687505-63dc-4cb9-af01-bd24887e9cdb",
+        "parent": null,
+        "name": "ShopifyAlexa.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ShopifyAlexa.js",
+        "cursor": {
+          "lineNumber": 36,
+          "column": 35
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "ShopifyAlexa"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSK130a6692cacd41198523175800d313ed",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1602612583120
+      }
+    },
+    "openFiles": [
+      "7f687505-63dc-4cb9-af01-bd24887e9cdb"
+    ],
+    "currentFileId": "7f687505-63dc-4cb9-af01-bd24887e9cdb",
+    "resources": {
+      "alexaSK130a6692cacd41198523175800d313ed": {
+        "name": "alexaSK130a6692cacd41198523175800d313ed",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.130a6692-cacd-4119-8523-175800d313ed",
+          "applicationID": ""
+        }
+      },
+      "ddbbooks": {
+        "name": "ddbbooks",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:123314105720:table/books",
+            "name": "books",
+            "partitionKey": "@{book}",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": "CloudFormation",
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask-sdk": {
+          "name": "ask-sdk",
+          "language": "nodejs",
+          "version": "2.7.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.3.1",
+    "projectName": "ShopifyAlexa",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1602614276212
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "shopifyalexa",
+      "url": "https://github.com/JoseJavierPena/shopifyalexa"
+    }
+  }
+}
